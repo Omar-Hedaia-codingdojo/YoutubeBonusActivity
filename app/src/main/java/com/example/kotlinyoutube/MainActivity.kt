@@ -8,8 +8,6 @@ import android.os.Bundle
 import android.widget.GridView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
@@ -72,7 +70,7 @@ class MainActivity : AppCompatActivity() {
     private fun initializeRV(){
 
         val gridView: GridView = findViewById(R.id.rvVideos)
-        gridView.adapter = ViddeoGridAdapter(videos, player,this@MainActivity)
+        gridView.adapter = VideoGridAdapter(videos, player,this@MainActivity)
 
     }
 
