@@ -8,9 +8,9 @@ import android.widget.BaseAdapter
 import android.widget.Button
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 
-class ViddeoGridAdapter(private val videoList: Array<Array<String>>,
-                        private val player: YouTubePlayer,
-                        private val context:Context
+class VideoGridAdapter(private val videoList: Array<Array<String>>,
+                       private val player: YouTubePlayer,
+                       private val context:Context
 ):BaseAdapter() {
 
     private var layoutInflater: LayoutInflater? = null
